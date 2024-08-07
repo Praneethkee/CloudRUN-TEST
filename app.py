@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route('/', methods=['GET', 'POST'])
 def principal():
 
- return render_template("linecharts.html")
+ return render_template("index.html")
 
 if __name__ == '__main__':
 
