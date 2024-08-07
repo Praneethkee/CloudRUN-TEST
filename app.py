@@ -1,11 +1,11 @@
-from flask import Flask, render_template, url_for
+from flask import Flask, make_response
 
 app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
 def principal():
-
- return render_template("./index.html")
+ html_content = "<h1>It Works</h1>"
+ return make_response(html_content)
 
 if __name__ == '__main__':
 
